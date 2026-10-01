@@ -1,0 +1,19 @@
+{
+  "name": "my-qa-assignment",
+  "version": "1.0.0",
+  "description": "Playwright + TypeScript QA test suite for saucedemo.com UI and reqres.in API",
+  "main": "index.js",
+  "scripts": {
+    "demo": "playwright test -c playwright.demo.config.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@playwright/test": "^1.63.0",
+    "@types/node": "^26.6.3",
+    "dotenv": "^18.0.5",
+    "typescript": "^7.0.2"
+  }
+}

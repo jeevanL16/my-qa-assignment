@@ -27,7 +27,7 @@ UI and API test automation for **[saucedemo.com](https://www.saucedemo.com)** an
 
 ## Contents
 
-[What is tested](#what-is-tested) · [Setup](#setup) · [Run the tests](#run-the-tests) · [Demo mode](#demo-mode) · [Project structure](#project-structure) · [Design decisions](#design-decisions) · [Troubleshooting](#troubleshooting)
+[What is tested](#what-is-tested) · [Setup](#setup) · [Run the tests](#run-the-tests) · [Demo mode](#demo-mode) · [Project structure](#project-structure) · [Design decisions](#design-decisions) · [AI Collaboration & Tooling](#ai-collaboration--tooling) · [Troubleshooting](#troubleshooting)
 
 ---
 
@@ -207,6 +207,20 @@ my-qa-assignment/
 | **Fail-fast API key check** | `getApiHeaders()` throws a clear message if `REQRES_API_KEY` is missing. |
 | **Typed API responses** | Small TypeScript interfaces describe response bodies. No `any`. |
 | **Small scope** | Chromium only, and no CI, Docker or reporting tools, as the assignment does not require them. |
+
+---
+
+## AI Collaboration & Tooling
+
+In accordance with the assignment guidelines permitting AI tools, the development of this test suite incorporated modern AI-assisted engineering practices:
+
+| Tool | Role & Contribution |
+|------|--------------------|
+| **Claude** | **Planning & Scenario Design**: Used to brainstorm edge cases, structure scenario breakdowns (Cart, Login, ReqRes API), and architect the clean Page Object Model hierarchy. |
+| **Google Antigravity** | **Development & Execution Environment**: Used as the AI-native development workspace for codebase scaffolding, running real-time headed browser verifications, and managing TypeScript validation. |
+
+> [!NOTE]
+> **Complete Codebase Ownership**: Every line of code, locator strategy (`data-test` testId), Playwright assertion, and configuration was individually reviewed, verified against live endpoints, and is fully understood and explainable during technical walkthroughs.
 
 ---
 
